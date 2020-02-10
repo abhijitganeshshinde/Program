@@ -8,11 +8,11 @@ for (( i=2; i<=num/2; i++ ))
 do 
 	if (( $num % $i == 0 ))
 	then
-	echo "Not Prime"
+	echo "But Not Prime"
 	exit
 	fi
 done
-	echo "Prime"
+	echo "also Prime "
 }
 
 function myfunc1(){
@@ -29,7 +29,7 @@ rem=0;
 	done
 	if (( $temp == $sum ))
 	then
-	echo "Palindrome is also "
+	echo "Palindrome is  "
 	res=$( myfunc $num1 )
 	echo $res
 	else
@@ -37,7 +37,5 @@ rem=0;
 	fi
 	
 }
-res=$( myfunc $num1 )
-echo $res
 res=$( myfunc1 $num1 )
 echo $res
